@@ -43,8 +43,10 @@ public class AppConfig {
                     @Override
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration cfg = new CorsConfiguration();
-                        cfg.setAllowedOrigins(Arrays.asList(
-                                "https://sevariya.vercel.app"
+                         cfg.setAllowedOrigins(Arrays.asList(
+                                "https://sevariya.vercel.app",                             
+                                "http://localhost:3001",
+                                 "http://localhost:3000"
                         ));
                         cfg.setAllowedMethods(Collections.singletonList("*"));
                         cfg.setAllowCredentials(true);
